@@ -5,6 +5,10 @@ env/
 __pycache__/
 *.py[cod]
 
+# DB file and migration files
+*sqlite3
+migrations/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
