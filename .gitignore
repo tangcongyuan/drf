@@ -1,8 +1,9 @@
 # virtual environment
 env/
 
-# pyc files
-*.pyc
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 
 # Windows image file caches
 Thumbs.db

@@ -32,6 +32,7 @@ from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
 
 class SnippetSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
+    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')  # I really don't know what this 'format' is doing here.
 
     class Meta:
         model = Snippet
