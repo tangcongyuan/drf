@@ -1,0 +1,66 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$30000$GGB2Z81oLqlj$V5yuvpqJ1JxGV+EGkKZJqrE51sYJ5S3Q4KD04COPS0Q=",
+    "last_login": "2016-11-07T15:35:10.418Z",
+    "is_superuser": true,
+    "username": "eric",
+    "first_name": "",
+    "last_name": "",
+    "email": "tangcongyuan@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2016-11-07T15:34:48.734Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$30000$N5vcKSUCDg1o$+drRFd5TQDq8F7HbpfDnkM6zSp74iOYBZkRhpT3CCC4=",
+    "last_login": "2016-11-07T15:38:30Z",
+    "is_superuser": false,
+    "username": "michelle",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2016-11-07T15:35:28.502Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "snippets.snippet",
+  "pk": 1,
+  "fields": {
+    "created": "2016-11-07T15:36:54.897Z",
+    "title": "Python Hello World",
+    "code": "print \"Hello world\"",
+    "linenos": true,
+    "language": "python",
+    "style": "friendly",
+    "owner": 1,
+    "highlighted": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\n   \"http://www.w3.org/TR/html4/strict.dtd\">\n\n<html>\n<head>\n  <title>Python Hello World</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=None\">\n  <style type=\"text/css\">\ntd.linenos { background-color: #f0f0f0; padding-right: 10px; }\nspan.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }\npre { line-height: 125%; }\nbody .hll { background-color: #ffffcc }\nbody  { background: #f0f0f0; }\nbody .c { color: #60a0b0; font-style: italic } /* Comment */\nbody .err { border: 1px solid #FF0000 } /* Error */\nbody .k { color: #007020; font-weight: bold } /* Keyword */\nbody .o { color: #666666 } /* Operator */\nbody .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */\nbody .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */\nbody .cp { color: #007020 } /* Comment.Preproc */\nbody .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */\nbody .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */\nbody .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */\nbody .gd { color: #A00000 } /* Generic.Deleted */\nbody .ge { font-style: italic } /* Generic.Emph */\nbody .gr { color: #FF0000 } /* Generic.Error */\nbody .gh { color: #000080; font-weight: bold } /* Generic.Heading */\nbody .gi { color: #00A000 } /* Generic.Inserted */\nbody .go { color: #888888 } /* Generic.Output */\nbody .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */\nbody .gs { font-weight: bold } /* Generic.Strong */\nbody .gu { color: #800080; font-weight: bold } /* Generic.Subheading */\nbody .gt { color: #0044DD } /* Generic.Traceback */\nbody .kc { color: #007020; font-weight: bold } /* Keyword.Constant */\nbody .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */\nbody .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */\nbody .kp { color: #007020 } /* Keyword.Pseudo */\nbody .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */\nbody .kt { color: #902000 } /* Keyword.Type */\nbody .m { color: #40a070 } /* Literal.Number */\nbody .s { color: #4070a0 } /* Literal.String */\nbody .na { color: #4070a0 } /* Name.Attribute */\nbody .nb { color: #007020 } /* Name.Builtin */\nbody .nc { color: #0e84b5; font-weight: bold } /* Name.Class */\nbody .no { color: #60add5 } /* Name.Constant */\nbody .nd { color: #555555; font-weight: bold } /* Name.Decorator */\nbody .ni { color: #d55537; font-weight: bold } /* Name.Entity */\nbody .ne { color: #007020 } /* Name.Exception */\nbody .nf { color: #06287e } /* Name.Function */\nbody .nl { color: #002070; font-weight: bold } /* Name.Label */\nbody .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */\nbody .nt { color: #062873; font-weight: bold } /* Name.Tag */\nbody .nv { color: #bb60d5 } /* Name.Variable */\nbody .ow { color: #007020; font-weight: bold } /* Operator.Word */\nbody .w { color: #bbbbbb } /* Text.Whitespace */\nbody .mb { color: #40a070 } /* Literal.Number.Bin */\nbody .mf { color: #40a070 } /* Literal.Number.Float */\nbody .mh { color: #40a070 } /* Literal.Number.Hex */\nbody .mi { color: #40a070 } /* Literal.Number.Integer */\nbody .mo { color: #40a070 } /* Literal.Number.Oct */\nbody .sb { color: #4070a0 } /* Literal.String.Backtick */\nbody .sc { color: #4070a0 } /* Literal.String.Char */\nbody .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */\nbody .s2 { color: #4070a0 } /* Literal.String.Double */\nbody .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */\nbody .sh { color: #4070a0 } /* Literal.String.Heredoc */\nbody .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */\nbody .sx { color: #c65d09 } /* Literal.String.Other */\nbody .sr { color: #235388 } /* Literal.String.Regex */\nbody .s1 { color: #4070a0 } /* Literal.String.Single */\nbody .ss { color: #517918 } /* Literal.String.Symbol */\nbody .bp { color: #007020 } /* Name.Builtin.Pseudo */\nbody .vc { color: #bb60d5 } /* Name.Variable.Class */\nbody .vg { color: #bb60d5 } /* Name.Variable.Global */\nbody .vi { color: #bb60d5 } /* Name.Variable.Instance */\nbody .il { color: #40a070 } /* Literal.Number.Integer.Long */\n\n  </style>\n</head>\n<body>\n<h2>Python Hello World</h2>\n\n<table class=\"highlighttable\"><tr><td class=\"linenos\"><div class=\"linenodiv\"><pre>1</pre></div></td><td class=\"code\"><div class=\"highlight\"><pre><span></span><span class=\"k\">print</span> <span class=\"s2\">&quot;Hello world&quot;</span>\n</pre></div>\n</td></tr></table></body>\n</html>\n"
+  }
+},
+{
+  "model": "snippets.snippet",
+  "pk": 2,
+  "fields": {
+    "created": "2016-11-07T15:39:18.311Z",
+    "title": "HTML Hello World",
+    "code": "<html>\r\n  <p>Hello world</p>\r\n</html>",
+    "linenos": true,
+    "language": "html",
+    "style": "friendly",
+    "owner": 2,
+    "highlighted": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\n   \"http://www.w3.org/TR/html4/strict.dtd\">\n\n<html>\n<head>\n  <title>HTML Hello World</title>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=None\">\n  <style type=\"text/css\">\ntd.linenos { background-color: #f0f0f0; padding-right: 10px; }\nspan.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }\npre { line-height: 125%; }\nbody .hll { background-color: #ffffcc }\nbody  { background: #f0f0f0; }\nbody .c { color: #60a0b0; font-style: italic } /* Comment */\nbody .err { border: 1px solid #FF0000 } /* Error */\nbody .k { color: #007020; font-weight: bold } /* Keyword */\nbody .o { color: #666666 } /* Operator */\nbody .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */\nbody .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */\nbody .cp { color: #007020 } /* Comment.Preproc */\nbody .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */\nbody .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */\nbody .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */\nbody .gd { color: #A00000 } /* Generic.Deleted */\nbody .ge { font-style: italic } /* Generic.Emph */\nbody .gr { color: #FF0000 } /* Generic.Error */\nbody .gh { color: #000080; font-weight: bold } /* Generic.Heading */\nbody .gi { color: #00A000 } /* Generic.Inserted */\nbody .go { color: #888888 } /* Generic.Output */\nbody .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */\nbody .gs { font-weight: bold } /* Generic.Strong */\nbody .gu { color: #800080; font-weight: bold } /* Generic.Subheading */\nbody .gt { color: #0044DD } /* Generic.Traceback */\nbody .kc { color: #007020; font-weight: bold } /* Keyword.Constant */\nbody .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */\nbody .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */\nbody .kp { color: #007020 } /* Keyword.Pseudo */\nbody .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */\nbody .kt { color: #902000 } /* Keyword.Type */\nbody .m { color: #40a070 } /* Literal.Number */\nbody .s { color: #4070a0 } /* Literal.String */\nbody .na { color: #4070a0 } /* Name.Attribute */\nbody .nb { color: #007020 } /* Name.Builtin */\nbody .nc { color: #0e84b5; font-weight: bold } /* Name.Class */\nbody .no { color: #60add5 } /* Name.Constant */\nbody .nd { color: #555555; font-weight: bold } /* Name.Decorator */\nbody .ni { color: #d55537; font-weight: bold } /* Name.Entity */\nbody .ne { color: #007020 } /* Name.Exception */\nbody .nf { color: #06287e } /* Name.Function */\nbody .nl { color: #002070; font-weight: bold } /* Name.Label */\nbody .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */\nbody .nt { color: #062873; font-weight: bold } /* Name.Tag */\nbody .nv { color: #bb60d5 } /* Name.Variable */\nbody .ow { color: #007020; font-weight: bold } /* Operator.Word */\nbody .w { color: #bbbbbb } /* Text.Whitespace */\nbody .mb { color: #40a070 } /* Literal.Number.Bin */\nbody .mf { color: #40a070 } /* Literal.Number.Float */\nbody .mh { color: #40a070 } /* Literal.Number.Hex */\nbody .mi { color: #40a070 } /* Literal.Number.Integer */\nbody .mo { color: #40a070 } /* Literal.Number.Oct */\nbody .sb { color: #4070a0 } /* Literal.String.Backtick */\nbody .sc { color: #4070a0 } /* Literal.String.Char */\nbody .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */\nbody .s2 { color: #4070a0 } /* Literal.String.Double */\nbody .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */\nbody .sh { color: #4070a0 } /* Literal.String.Heredoc */\nbody .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */\nbody .sx { color: #c65d09 } /* Literal.String.Other */\nbody .sr { color: #235388 } /* Literal.String.Regex */\nbody .s1 { color: #4070a0 } /* Literal.String.Single */\nbody .ss { color: #517918 } /* Literal.String.Symbol */\nbody .bp { color: #007020 } /* Name.Builtin.Pseudo */\nbody .vc { color: #bb60d5 } /* Name.Variable.Class */\nbody .vg { color: #bb60d5 } /* Name.Variable.Global */\nbody .vi { color: #bb60d5 } /* Name.Variable.Instance */\nbody .il { color: #40a070 } /* Literal.Number.Integer.Long */\n\n  </style>\n</head>\n<body>\n<h2>HTML Hello World</h2>\n\n<table class=\"highlighttable\"><tr><td class=\"linenos\"><div class=\"linenodiv\"><pre>1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\"><pre><span></span><span class=\"p\">&lt;</span><span class=\"nt\">html</span><span class=\"p\">&gt;</span>\n  <span class=\"p\">&lt;</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>Hello world<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>\n<span class=\"p\">&lt;/</span><span class=\"nt\">html</span><span class=\"p\">&gt;</span>\n</pre></div>\n</td></tr></table></body>\n</html>\n"
+  }
+}
+]
