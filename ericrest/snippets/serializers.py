@@ -29,9 +29,10 @@ from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
 #         return instance
 
 
-
-class SnippetSerializer(serializers.ModelSerializer):
-    owner = serializers.ReadOnlyField(source='owner.username')
+## class SnippetSerializer(serializers.ModelSerializer):
+class SnippetSerializer(serializers.HyperlinkedModelSerializer):
+    ## owner = serializers.ReadOnlyField(source='owner.username')
+    owner = serializers.HyperlinkedIdentityField(view_name='user-detail', read_only=True)
     highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')  # I really don't know what this 'format' is doing here.
 
     class Meta:
@@ -43,8 +44,10 @@ class SnippetSerializer(serializers.ModelSerializer):
 
 from django.contrib.auth.models import User
 
-class UserSerializer(serializers.ModelSerializer):
-    snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=Snippet.objects.all())
+## class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    ## snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=Snippets.objects.all())
+    snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippet-detail', read_only=True)
 
     class Meta:
         model = User
